@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importación de librerías -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="Css/Stiles.css">
+    <script src="script.js"></script>
+    <title>TecniXplora</title>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TecniXplora</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#comentario">Comentarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contacto">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" id="buscador" placeholder="Busca tu producto...">
+              <button class="btn btn-outline-success" type="button" onclick="BuscarProducto()">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+       <!--Carrusel-->
+    <div
+    id="carouselExampleControls"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="Imagenes/samsung-cyber-wow.jpg"
+          class="d-block mx-auto"
+          alt="..."
+          height="400"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Imagenes/IKM7IEI5O5HNBXH3FB7CBHXZ2Y.jpg"
+          class="d-block mx-auto"
+          alt="..."
+          height="400"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Imagenes/sears-10-dias-de-tecnologia-30-de-descuento-febrero-2019.jpg"
+          class="d-block mx-auto"
+          alt="..."
+          height="530"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+      
+
+  <!--Body-->
+
+  <main>
+    <div class="Productos">
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/Iphone.jpeg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">iPhone 11 128 GB</h2>
+        <h5>Precio: $2.649.000</h5>
+        <p>El iPhone 11 Blanco tiene un sistema de dos cámaras que te permite tomar fotos con ultra gran angular, capturar exceelntes fotos nocturnas con el modo Noche y grabar videos con una calidad sorprendente. Además, es resistente al agua y al polvo,* 
+          josetiene una batería de larga duración y viene en seis colores diferentes. Disfruta la espectacular experiencia de tener un iPhone 11. ¡Encuentra el iPhone ideal para ti acá!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/iphone azul.jpeg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">iPhone 13 128GB Azul</h2>
+        <h5>Precio: $3.699.000</h5>
+        <p>Diseñamos una arquitectura completamente nueva y giramos los lentes 45 grados. De esta manera, pudimos incluir nuestro sistema de dos cámaras más avanzado y un sensor de cámara gran angular más grande. 
+          Además, hicimos lugar para nuestra estabilización óptica de imagen por desplazamiento de sensor. Y equipamos la cámara ultra gran angular con un sensor más rápid</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/motorola.jpeg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">Celular MOTOROLA G52 128GB Azul</h2>
+        <h5>Precio: $679.900</h5>
+        <p>Disfruta al máximo de tu contenido de entretenimiento favorito con el moto G52. Observa el contraste infinito de la pantalla OLED de 6.6" y aprovecha al maximo su taza de refresco de 90 Hz. 
+          Siente el sonido multidimensional que ofrece el audio Dolby Atmos con el que cuenta el moto G52. ¡Compra el tuyo ahora!.</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/Xbox series X.jpg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">Consola XBOX Series X + 1 Control Inalámbrico + Paquete Forza Horizon 5</h2>
+        <h5>Precio: $3.399.900</h5>
+        <p>Comienza tu aventura definitiva con el Bundle de Consola Xbox Series X y la Edición Premium de Forza Horizon 5. 
+          Explora los vibrantes y siempre cambiantes paisajes del mundo abierto de México en los mejores autos del mundo. Los juegos que se han optimizado para Xbox Series X|S usan toda la potencia de las nuevas consolas para ofrecer velocidades de fotogramas más altas y estables de hasta 120 FPS durante el juego.Compra ya la tuya!!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/GoPro.jpeg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">Cámara GOPRO HERO 11 BLACK</h2>
+        <h5>Precio: $1.899.900</h5>
+        <p>La cámara GOPRO HERO11 Black cuenta con dos pantallas LCD una frontal y otra trasera que permite encuadrar las tomas perfectamente, 
+          el resultado es una mayor calidad de imagen, una mejor estabilización de vídeo y la flexibilidad de convertir tus grabaciones en amplias tomas cinematográficas para las publicaciones en redes sociales, la estabilización HyperSmooth 5.0 ganadora de un premio Emmy® mantiene sus grabaciones rectas incluso si la cámara gira 360°. ¡Adquiere la tuya aquí!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/nevera challenguer.jpeg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">Nevera CHALLENGER No Frost Congelador Superior 300 Litros</h2>
+        <h5>Precio: $1.829.900</h5>
+        <p>El mundo necesita que seamos responsables, necesita que evolucionemos, por eso la nueva serie de refrigeración Lúmina de Challenger lo hizo igual que tú. Su diseño moderno, elegante y sobrio proporciona una atractiva apariencia y mayor espacio interno. Lúmina se adapta a todas las necesidades, con la nevera CR317 tienes una nevera No Frost de 300 litros con la mayor capacidad 
+          y tecnología de la serie Lúmina constituyendo un claro ejemplo de diseño, calidad y compromiso con el medio ambiente. Compra ya la tuya!!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/Tv lg.jpg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">TV LG 75" Pulgadas 189 cm 75NANO77SRA 4K-UHD</h2>
+        <h5>Precio: $4.199.900</h5>
+        <p>El TV LG 75NANO77S las imágenes cobran vida con los colores puros de LG NanoCell llevandoté a otro nivel, lo que te permite disfrutar de cualquier contenido con una imagen más real y una resolución 4K. El procesador de IA, utiliza algoritmos de aprendizaje profundo para analizar lo que ves y transformar el contenido, generando como resultado una imagen más nítida, con niveles de definición 
+          y detalle notablemente superiores, incluso en nuestras pantallas más grandes. Incluye Magic Remote, controla el televisor con la voz, sin necesidad de teclear ¡lleva el tuyo ahora!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/Tv samsung.jpg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">TV SAMSUNG 65 Pulgadas 165.1 cm 65CU8000 4K</h2>
+        <h5>Precio: $2.699.900</h5>
+        <p>Tu TV SAMSUNG 65CU8000 Crystal UHD 4K cuenta con un procesador Crystal el cual escala con inteligencia artificial las imágenes hasta 4K y así podrás visualizar escenas más reales, logrando acceder a las películas, programas de televisión y juegos fácilmente en la pantalla de inicio del Samsung Hub adaptada para ti. 
+          Adicion al, gracias a la tecnología incorporada de PurColor podrás experimentar un nuevo nivel de profundidad y color en las imágenes. ¡Ven por tu TV ahora!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/Asus.jpeg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">Computador Portátil ASUS Vivobook 15,6"</h2>
+        <h5>Precio: $2.799.000</h5>
+        <p>ASUS VivoBook 15 agrega estilo y dinamismo a la informática diaria. Cuenta con un procesador Intel Core i5 y SSD PCIe de gran capacidad para un almacenamiento muy rápido. Con colores sobresalientes y una tecla Enter diferencial. Recrea todo tipo de contenido con su imagen en resolución Full HD, 
+          además la pantalla NanoEdge de bisel delgado proporciona una experiencia de visualización expansiva e inmersiva al permitir una pantalla más grande en un marco más pequeño y con un peso total de solo 1,7 kg para que puedas llevarlo sin esfuerzo. ¡Adquiérelo ya!</p>
+      </div>
+      <div class="Producto">
+        <img
+          class="card-img-top"
+          src="Imagenes/lenovo.jpg"
+          alt="Imagen del producto"
+        />
+        <h2 style="font-size: 32px">Computador Portátil LENOVO 14" Pulgadas IdeaPad 3 </h2>
+        <h5>Precio: $1.899.000</h5>
+        <p>En el portátil LENOVO IdeaPad 3 color azul, encuentra todo el rendimiento que necesitas, un portátil accesible que cubre tus necesidades, su combinación generosa de memoria Ram y almacenamiento en estado solido, es perfecto para tus tareas diarias, con un diseño extraordinario, este equipo superará tus expectativas. Así mismo, te brindará un entretenimiento superior gracias a su sonido Dolby Audio, 
+          y te sentirás seguro gracias a su obturador de privacidad en su cámara, cuando termines tus reuniones o videollamadas solo tienes que cerrarlo. Aprovecha ¡lleva el tuyo ahora!</p>
+      </div>
+    </div>
+  </main>
+
+  <!--comentarios-->
+  <div class="title-comentarios" id="comentario">
+    <h1> Comentarios </h1>
+  </div> 
+  <div id="contendor">
+    <label for="name">Nombre:</label> <input type="text" id="name" />
+    <label for="email">Email:</label> <input type="email" id="email" />
+    <label for="comment">Comentario:</label>
+    <textarea id="comment"></textarea>
+    <button onclick="guardarDatos()">Enviar</button>
+    <button type="button" onclick="borrarComentarios()">
+      Borrar comentarios
+    </button>
+    <div id="mensajes"></div>
+  </div>
+  <div id="contenedor-comentarios"></div>
+
+<!--Cargue de comentarios-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      mostrarComentarios();
+    });
+  </script>
+
+  <!--footer-->
+  <footer class="bg-dark text-light" id="Contacto">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Contacto</h3>
+          <p>Si deseas Agregar una Producto escribenos a : </p>
+          <p>Teléfono o Whatssap: 3506987956</p>
+          <p>Email: infoTuProducto@yopmail.com</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body></html>
+      
+      
+    
